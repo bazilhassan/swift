@@ -14,7 +14,6 @@ class ToDoListViewController: UIViewController {
     @IBOutlet weak var emptyListLabel: UILabel!
     @IBOutlet weak var btnAdd: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()

@@ -26,7 +26,8 @@ class AddTaskViewController: UIViewController {
         if taskTextField.text!.trimmingCharacters(in: .whitespaces).isEmpty == true {
             print("Task is empty")
         } else {
-            self.navigationController?.popViewController(animated: true, completion: {
+            self.navigationController?.popViewController(animated: true,
+                                                         completion: {
                 [weak self] in
                 self?.delegate?.addTaskIntoList(title: (self?.taskTextField.text!)!)
             })
